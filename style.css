@@ -403,7 +403,94 @@ a {
 }
 
 /* ==========================================================================
-   6. FOOTER
+   6. FEES & SCHEDULE SECTION
+   ========================================================================== */
+.fees-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.fees-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #0b72b9;
+    font-weight: 700;
+}
+
+.fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.fee-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #0b72b9;
+}
+
+.fee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.fee-card h3 {
+    color: #0b72b9;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.fee-details p {
+    margin: 15px 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.fee-details strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.payment-info {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #e52321;
+}
+
+.payment-info h3 {
+    color: #0b72b9;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.payment-info p {
+    margin: 15px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.payment-info a {
+    color: #0b72b9;
+    font-weight: 600;
+}
+
+.payment-info a:hover {
+    color: #e52321;
+}
+
+/* ==========================================================================
+   7. FOOTER
    ========================================================================== */
 .main-footer {
     background-color: #1a1a1a;
@@ -459,7 +546,7 @@ a {
 }
 
 /* ==========================================================================
-   7. MOBILE RESPONSIVENESS
+   8. MOBILE RESPONSIVENESS
    ========================================================================== */
 @media (max-width: 768px) {
     .top-bar-content {
@@ -510,6 +597,22 @@ a {
 
     .download-link {
         width: 100%;
+    }
+
+    .fees-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .fee-card {
+        padding: 25px;
+    }
+
+    .fee-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .payment-info {
+        padding: 25px;
     }
 
     .footer-content {
