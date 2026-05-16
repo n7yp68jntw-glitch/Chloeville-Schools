@@ -1,0 +1,189 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* ==========================================================================
+   2. TOP UTILITY BAR
+   ========================================================================== */
+.top-bar {
+    background-color: #0d1b2a; /* Dark navy background matching your first screenshot */
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-info a, .top-portal a {
+    color: #a0aec0; /* Soft grey text */
+}
+
+.top-info a:hover, .top-portal a:hover {
+    color: #ffffff;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   3. MAIN HEADER & NAVIGATION
+   ========================================================================== */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.school-logo {
+    height: 65px; /* Restricts the circular logo from taking up too much vertical space */
+    width: auto;
+    display: block;
+}
+
+/* Nav Menu Layout */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #d4af37; /* Clean gold accent color for active links */
+    border-bottom: 2px solid #d4af37;
+}
+
+/* ==========================================================================
+   4. HERO SECTION
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    /* Replace 'hero-bg.jpg' with your actual background image file name later */
+    background: url('hero-bg.jpg') no-repeat center center/cover; 
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+/* Dark blue overlay to make sure the white text is readable over the image */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Pushes content above the dark overlay */
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 35px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* CTA Button Styling */
+.cta-button {
+    display: inline-block;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #0d1b2a;
+}
+
+/* ==========================================================================
+   5. MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        gap: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+}
