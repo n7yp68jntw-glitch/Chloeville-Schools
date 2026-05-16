@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chloeville Schools</title>
+    <meta name="description" content="Chloeville Primary School - Raising Leaders of Value through quality education and innovative learning.">
+    <title>Chloeville Primary School | Excellence in Education</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Top Bar -->
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="top-info">
@@ -21,132 +23,369 @@
             </div>
             <div class="top-portal">
                 <span class="icon">🌐</span> 
-                <a href="#portal">International Portal</a>
+                <a href="#portal">Parent Portal</a>
+                <span class="icon" style="margin-left: 15px;">📅</span>
+                <a href="#calendar">School Calendar</a>
             </div>
         </div>
     </div>
 
+    <!-- Header/Navigation -->
     <header class="main-header">
         <div class="container header-content">
             <div class="logo-container">
                 <a href="#home">
                     <img src="image.png" alt="Chloeville Schools Logo" class="school-logo">
+                    <div class="logo-text">
+                        <h1>Chloeville Primary</h1>
+                        <p>Building Futures</p>
+                    </div>
                 </a>
             </div>
             
             <nav class="nav-menu">
-                <ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navList">
                     <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#academy">Academy</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
                     <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#news">News & Events</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
         <div class="hero-overlay"></div>
-        
         <div class="container hero-content">
             <h2>Raising Leaders of Value</h2>
             <p class="hero-subtitle">
-                A premium institute built for state-of-the-art innovation, 
-                leadership development, and world-class academic supremacy.
+                Where quality education meets innovative learning. 
+                We nurture young minds to become responsible global citizens.
             </p>
-            <a href="#apply" class="cta-button">BEGIN ADMISSION PROCESS</a>
+            <div class="hero-buttons">
+                <a href="#admissions" class="cta-button primary-btn">BEGIN ADMISSION PROCESS</a>
+                <a href="#tour" class="cta-button secondary-btn">SCHEDULE A TOUR</a>
+            </div>
         </div>
     </section>
 
-    <section id="apply" class="admissions-hub">
+    <!-- Welcome Section -->
+    <section id="about" class="welcome-section">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-content">
+                    <h2>Welcome to Chloeville Primary School</h2>
+                    <p>At Chloeville, we believe every child has the potential to excel. Our dedicated team of educators creates a nurturing environment where students develop academically, socially, and emotionally.</p>
+                    <div class="highlight-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎓</span>
+                            <div>
+                                <h4>Excellence</h4>
+                                <p>World-class curriculum and teaching methods</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌱</span>
+                            <div>
+                                <h4>Growth</h4>
+                                <p>Personalized learning for every child</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">❤️</span>
+                            <div>
+                                <h4>Care</h4>
+                                <p>Safe, supportive, and inclusive community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-image">
+                    <div class="image-placeholder">📚 School Photo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics-section">
+        <div class="container">
+            <h2>Our Academic Programs</h2>
+            <p class="section-subtitle">Comprehensive curriculum designed for holistic development</p>
+            
+            <div class="academics-grid">
+                <div class="academic-card">
+                    <div class="card-icon">📖</div>
+                    <h3>Language & Literacy</h3>
+                    <p>English, Mathematics, and Mother Tongue instruction with emphasis on communication skills.</p>
+                </div>
+                <div class="academic-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Science & Technology</h3>
+                    <p>Hands-on experiments, coding basics, and digital literacy for the modern world.</p>
+                </div>
+                <div class="academic-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Arts & Culture</h3>
+                    <p>Visual arts, music, drama, and cultural studies to foster creativity and expression.</p>
+                </div>
+                <div class="academic-card">
+                    <div class="card-icon">⚽</div>
+                    <h3>Sports & Health</h3>
+                    <p>Physical education, team sports, and wellness programs for healthy development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>Why Choose Chloeville?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>✨ Qualified Teachers</h3>
+                    <p>Experienced educators with continuous professional development and passion for teaching.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🏫 Modern Facilities</h3>
+                    <p>Well-equipped classrooms, science labs, computer center, sports facilities, and library.</p>
+                </div>
+                <div class="why-card">
+                    <h3>👨‍👩‍👧‍👦 Parent Engagement</h3>
+                    <p>Regular communication, parent-teacher conferences, and involvement in school activities.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🌍 Global Perspective</h3>
+                    <p>Exposure to diverse cultures and international best practices in education.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🎯 Individual Attention</h3>
+                    <p>Small class sizes ensure every child receives personalized guidance and support.</p>
+                </div>
+                <div class="why-card">
+                    <h3>🏆 Track Record</h3>
+                    <p>Consistent academic excellence and well-rounded student development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions-hub">
         <div class="container">
             <div class="hub-header">
-                <h2>Chloeville Admissions Portal</h2>
-                <p>We are excited to welcome new leaders of value. Follow the steps below to secure your child's future with us.</p>
+                <h2>Admissions Portal</h2>
+                <p>Join our learning community. We welcome curious minds and enthusiastic learners!</p>
             </div>
 
             <div class="portal-actions">
                 <div class="action-card primary-card">
+                    <div class="card-header-icon">📝</div>
                     <h3>New Applicant?</h3>
                     <p>Ready to join us? Create an account and fill out the online admission form.</p>
                     <a href="#form-start" class="hub-btn pdf-btn">START NEW APPLICATION</a>
                 </div>
                 <div class="action-card secondary-card">
+                    <div class="card-header-icon">👤</div>
                     <h3>Returning Parent?</h3>
                     <p>Check your admission status or continue an application you already started.</p>
                     <a href="#login" class="hub-btn login-btn">CHECK STATUS / RESUME</a>
                 </div>
+                <div class="action-card tertiary-card">
+                    <div class="card-header-icon">📞</div>
+                    <h3>Need Help?</h3>
+                    <p>Have questions about the admission process? Our team is here to assist you.</p>
+                    <a href="#contact" class="hub-btn contact-btn">CONTACT US</a>
+                </div>
             </div>
 
-            <h3 class="sub-title">Our Admission Process</h3>
+            <h3 class="sub-title">Our 4-Step Admission Process</h3>
             <div class="roadmap-grid">
                 <div class="step-box">
                     <div class="step-num">1</div>
-                    <h4>Apply Online</h4>
-                    <p>Fill the bio-data form and select the target class.</p>
+                    <h4>Online Registration</h4>
+                    <p>Create parent account and fill the bio-data form. Select target class level.</p>
                 </div>
                 <div class="step-box">
                     <div class="step-num">2</div>
-                    <h4>Submit Documents</h4>
-                    <p>Upload birth certificate and passport photographs.</p>
+                    <h4>Document Submission</h4>
+                    <p>Upload birth certificate, report card, and passport photographs online.</p>
                 </div>
                 <div class="step-box">
                     <div class="step-num">3</div>
-                    <h4>Entrance Exam</h4>
-                    <p>Attend the scheduled physical/online screening assessment.</p>
+                    <h4>Entrance Assessment</h4>
+                    <p>Attend scheduled physical assessment and interaction with our team.</p>
                 </div>
                 <div class="step-box">
                     <div class="step-num">4</div>
                     <h4>Enrollment</h4>
-                    <p>Receive your admission letter and complete fee payment.</p>
+                    <p>Receive admission letter and complete registration with fee payment.</p>
+                </div>
+            </div>
+
+            <div class="admission-info">
+                <div class="info-box">
+                    <h4>📅 Important Dates</h4>
+                    <p><strong>Admission Window:</strong> January - June<br>
+                    <strong>Results Release:</strong> Within 2 weeks of assessment<br>
+                    <strong>New Session:</strong> September</p>
+                </div>
+                <div class="info-box">
+                    <h4>👧 Age Requirements</h4>
+                    <p><strong>Pre-Primary:</strong> 3-4 years<br>
+                    <strong>Primary 1-2:</strong> 5-6 years<br>
+                    <strong>Primary 3-6:</strong> 7-12 years</p>
                 </div>
             </div>
 
             <div class="download-footer">
-                <p>Need more information before applying?</p>
+                <p>Want to learn more before applying?</p>
                 <div class="download-links">
-                    <a href="prospectus.pdf" target="_blank" class="download-link">📄 Download School Prospectus (PDF)</a>
-                    <a href="fees.pdf" target="_blank" class="download-link">📄 View Tuition & Fees Guide</a>
+                    <a href="prospectus.pdf" target="_blank" class="download-link">📄 School Prospectus (PDF)</a>
+                    <a href="fees.pdf" target="_blank" class="download-link">💰 Tuition & Fees Guide</a>
+                    <a href="calendar.pdf" target="_blank" class="download-link">📅 Academic Calendar</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- News & Events Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>Latest News & Events</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">MAY 16</div>
+                    <h3>Annual Sports Day 2026</h3>
+                    <p>Exciting competitions and races as students showcase their athletic talents and team spirit!</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">MAY 10</div>
+                    <h3>Science Fair Success</h3>
+                    <p>Students presented innovative projects ranging from robotics to environmental conservation.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">MAY 05</div>
+                    <h3>Cultural Week Celebrations</h3>
+                    <p>Students from diverse backgrounds shared their traditions through music, dance, and cuisine.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chloeville City, State</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:08121556876">08121556876</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:chloevilleschools64@gmail.com">chloevilleschools64@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+                            <p>Saturday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-content">
             <div class="footer-section">
-                <h4>About Chloeville Schools</h4>
-                <p>A premium institute dedicated to raising leaders of value through innovative curriculum, world-class facilities, and exceptional mentorship.</p>
+                <h4>About Chloeville Primary</h4>
+                <p>A premier primary school dedicated to raising leaders of value through innovative curriculum, world-class facilities, and exceptional mentorship.</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#academy">Academy</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
                     <li><a href="#admissions">Admissions</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#news">News & Events</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contact Information</h4>
-                <p><strong>Email:</strong> <a href="mailto:chloevilleschools64@gmail.com">chloevilleschools64@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:08121556876">08121556876</a></p>
-                <p><strong>Hours:</strong> Mon - Fri, 8:00 AM - 4:00 PM</p>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#calendar">Academic Calendar</a></li>
+                    <li><a href="#portal">Parent Portal</a></li>
+                    <li><a href="#prospectus">School Prospectus</a></li>
+                    <li><a href="#fees">Fees & Payment</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="#facebook">Facebook</a></li>
-                    <li><a href="#twitter">Twitter</a></li>
-                    <li><a href="#instagram">Instagram</a></li>
-                    <li><a href="#linkedin">LinkedIn</a></li>
+                <ul class="social-links">
+                    <li><a href="#facebook" aria-label="Facebook">f</a></li>
+                    <li><a href="#twitter" aria-label="Twitter">𝕏</a></li>
+                    <li><a href="#instagram" aria-label="Instagram">📷</a></li>
+                    <li><a href="#linkedin" aria-label="LinkedIn">in</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Chloeville Schools. All Rights Reserved. | <a href="#privacy" style="color: #ffffff; opacity: 0.8;">Privacy Policy</a> | <a href="#terms" style="color: #ffffff; opacity: 0.8;">Terms of Service</a></p>
+            <p>&copy; 2026 Chloeville Primary School. All Rights Reserved. | <a href="#privacy" class="footer-link">Privacy Policy</a> | <a href="#terms" class="footer-link">Terms of Use</a></p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
