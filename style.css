@@ -195,7 +195,271 @@ a {
 }
 
 /* ==========================================================================
-   5. MOBILE RESPONSIVENESS
+   5. ADMISSIONS HUB SECTION
+   ========================================================================== */
+.admissions-hub {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.hub-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hub-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b72b9;
+    margin-bottom: 15px;
+}
+
+.hub-header p {
+    font-size: 16px;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Portal Action Cards */
+.portal-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.action-card {
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.primary-card {
+    background-color: #0b72b9;
+    color: #ffffff;
+}
+
+.secondary-card {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0b72b9;
+}
+
+.action-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.action-card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Hub Buttons */
+.hub-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.pdf-btn {
+    background-color: #fef135;
+    color: #111111;
+}
+
+.pdf-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background-color: #0b72b9;
+    color: #ffffff;
+}
+
+.login-btn:hover {
+    background-color: #e52321;
+}
+
+.secondary-card .login-btn {
+    background-color: #e52321;
+    color: #ffffff;
+}
+
+.secondary-card .login-btn:hover {
+    background-color: #0b72b9;
+}
+
+/* Sub Title */
+.sub-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b72b9;
+    margin-bottom: 40px;
+}
+
+/* Roadmap Grid */
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.step-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.step-box:hover {
+    transform: translateY(-3px);
+}
+
+.step-num {
+    width: 50px;
+    height: 50px;
+    background-color: #e52321;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.step-box h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0b72b9;
+    margin-bottom: 10px;
+}
+
+.step-box p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Download Footer */
+.download-footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.download-footer p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.download-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0b72b9;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #e52321;
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+.main-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fef135;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ffffff;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.footer-section a:hover {
+    color: #fef135;
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   7. MOBILE RESPONSIVENESS
    ========================================================================== */
 @media (max-width: 768px) {
     .top-bar-content {
@@ -211,6 +475,8 @@ a {
 
     .nav-menu ul {
         gap: 15px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .hero-section h2 {
@@ -219,5 +485,35 @@ a {
 
     .hero-subtitle {
         font-size: 15px;
+    }
+
+    .hub-header h2 {
+        font-size: 28px;
+    }
+
+    .portal-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .step-box {
+        padding: 20px;
+    }
+
+    .download-links {
+        flex-direction: column;
+    }
+
+    .download-link {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
